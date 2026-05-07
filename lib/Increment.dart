@@ -12,11 +12,11 @@ class _IncrementState extends State<Increment> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text("Text Added"),
-        ],
-      ),
+      body: ListView.builder(itemBuilder: (context, index){
+        return ListTile(
+          title: Text("Flutter Dev"),
+        );
+      }),
     );
   }
 }
