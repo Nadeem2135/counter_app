@@ -15,6 +15,8 @@ class _IncrementState extends State<Increment> {
       body: ListView.builder(itemBuilder: (context, index){
         return ListTile(
           title: Text("Flutter Dev"),
+          subtitle: Text("Flutter Dev"),
+          trailing: Icon(Icons.add_a_photo),
         );
       }),
     );
